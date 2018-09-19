@@ -1,5 +1,32 @@
 @media only screen and (min-width: 850px) {
-    nav {
-      background-color: #3397DB;
+    #maincontent-restaurant {
+      grid-template-areas: 
+        'restaurant-container reviews-container'
+        'restaurant-container reviews-container'
+        'map-container map-container';
     }
-  }
+    #reviews-container {
+        padding: 140px 40px 40px 20px;
+      }
+    #restaurant-container {
+        padding: 140px 20px 40px 40px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #maincontent-restaurant {
+      grid-template-areas: 
+        'restaurant-container reviews-container map-container';
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #reviews-container {
+        padding: 140px 40px 40px 20px;
+      }
+    #restaurant-container {
+        padding: 140px 20px 40px 40px;
+    }
+    .inside #map-container {
+        height: 87%;
+        padding: 130px 0 0 0;
+    }
+}

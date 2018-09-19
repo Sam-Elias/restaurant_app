@@ -43,22 +43,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   display: grid;
   grid-template-areas: 
    'restaurant-container'
-   'reviews-container '
+   'reviews-container'
    'map-container';
   justify-items: center;
 }
-@media only screen and (min-width: 850px) {
-  .inside #footer {
-    background-color: #3397DB;
-  }
-}
+
 
 #footer {
-  background-color: #444;
+  background-color: #252831;
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -115,14 +111,13 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 600px;
   width: 100%;
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  background-color: #3397DB;
+  background-color: #373c49;
   align-items: center;
   display: flex; 
 }
