@@ -41,7 +41,16 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent-restaurant {
   background-color: #f3f3f3;
   display: grid;
+  grid-template-areas: 
+   'restaurant-container'
+   'reviews-container '
+   'map-container';
   justify-items: center;
+}
+@media only screen and (min-width: 850px) {
+  .inside #footer {
+    background-color: #3397DB;
+  }
 }
 
 #footer {
@@ -207,6 +216,7 @@ nav h1 a {
   background: blue ;
   height: 400px;
   width: 100%;
+  grid-area: map-container;
 }
 .inside #map {
   background-color: #ccc;
@@ -258,6 +268,10 @@ nav h1 a {
 }
 #reviews-container {
   padding: 40px;
+  grid-area: reviews-container;
+}
+#restaurant-container {
+  grid-area: restaurant-container; 
 }
 #reviews-container h2 {
   color: #f58500;
