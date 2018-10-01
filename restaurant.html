@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Normalize.css for better cross-browser consistency -->
@@ -34,7 +34,7 @@
     <!-- Beginning restaurant -->
     <section role= "restaurant details" id="restaurant-container">
       <h1 tabIndex="2" id="restaurant-name"></h1>
-      <img tabIndex="2" alt="restaurant image" id="restaurant-img">
+      <img tabIndex="2" id="restaurant-img">
       <p tabIndex="2" id="restaurant-cuisine"></p>
       <p tabIndex="2" id="restaurant-address"></p>
       <table tabIndex="2" id="restaurant-hours"></table>
@@ -46,7 +46,7 @@
     </section>
     <!-- End reviews -->
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" tabindex="-1">
       <div role="map application" aria-label="map" id="map"></div>
     </section>
     <!-- End map -->
