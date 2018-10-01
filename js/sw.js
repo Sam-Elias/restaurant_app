@@ -2,7 +2,7 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
-          '/index.hmtl',
+          '/index.html',
           '/restaurant.html',
           '/js/dbhelper.js',
           '/js/main.js',
@@ -18,6 +18,8 @@ self.addEventListener('install', function(event) {
           '/img/8.jpg',
           '/img/9.jpg',
           '/img/10.jpg'
+          'css/styles.css'
+          'css/queries.css'
         ]);
       })
     );
